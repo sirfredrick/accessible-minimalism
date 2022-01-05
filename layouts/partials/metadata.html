@@ -1,7 +1,7 @@
 {{if .Params.author}}
-  <p>by {{.Params.author}}</p>
+  <p>{{ i18n "by" }} {{.Params.author}}</p>
 {{else if .Site.Params.author}}
-  <p>by {{.Site.Params.author}}</p>
+  <p>{{ i18n "by" }} {{.Site.Params.author}}</p>
 {{end}}
 
 {{ if not .Date.IsZero }}

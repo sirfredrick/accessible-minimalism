@@ -1,4 +1,4 @@
-<p><a name="nav-menu" id="nav-menu"><strong>Site menu</strong></a></p>
+<p><a name="nav-menu" id="nav-menu"><strong>{{ i18n "siteMenu" }}</strong></a></p>
 
 <ul>
     {{ range .Site.Menus.main }}
@@ -11,16 +11,17 @@
     {{ end }}
 </ul>
 
-<p><a href="#">Back to top</a></p>
+<p><a href="#">{{ i18n "toTop" }}</a></p>
 
 <p>
 {{ if isset .Site.Params "email" }}
-<a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.emailText }}</a>
+  <a href="mailto:{{ .Site.Params.email }}">{{ i18n "emailText" }}</a>
+  &nbsp;
 {{ end }}
 {{ $url := "" }}
 {{ with .OutputFormats.Get "rss" -}}
     {{ if not (eq .Permalink "") }}
-      <a href="{{ .Permalink | safeURL }}">{{ $.Site.Params.rssText }}</a>
+      <a href="{{ .Permalink | safeURL }}">{{ i18n "rssText" }}</a>
     {{ end }}
 {{ end -}}
 {{ range .Site.Params.socials }}
