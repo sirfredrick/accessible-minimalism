@@ -1,5 +1,7 @@
 # Personal Version of Leon Stafford's Accessible Minimalism Hugo Theme
 
+See [https://github.com/leonstafford/accessible-minimalism-hugo-theme](https://github.com/leonstafford/accessible-minimalism-hugo-theme) for the original repo.
+
 Minimalist Hugo theme with a penchant for accessibility 
 
 [Demo site](https://accessible-minimalism.netlify.app)
@@ -82,4 +84,5 @@ The main things you may want to adjust when using this theme are your content
 ### License
 
 [The Unlicense](https://unlicense.org) - do whatever you like with this code.
+
 Note: This license applies to Sirfredrick's changes as well.
