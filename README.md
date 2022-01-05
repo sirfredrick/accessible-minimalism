@@ -1,4 +1,4 @@
-# Accessible Minimalism Hugo Theme
+# Personal Version of Leon Stafford's Accessible Minimalism Hugo Theme
 
 Minimalist Hugo theme with a penchant for accessibility 
 
@@ -30,12 +30,12 @@ The early web was great for content, unburdened by MBs of JavaScript or CSS.
 
 1. In your Hugo site's root, clone this repo to your `themes` dir:
 
-`git clone --depth 1 https://github.com/leonstafford/accessible-minimalism-hugo-theme themes/accessible-minimalism`
+`git clone --depth 1 https://github.com/sirfredrick/accessible-minimalism themes/accessible-minimalism`
 
 It may be preferable to use git's submodule functionality to keep the theme
  within your website's repository. To do this, use:
 
-`git submodule add https://github.com/leonstafford/accessible-minimalism-hugo-theme themes/accessible-minimalism`
+`git submodule add https://github.com/sirfredrick/accessible-minimalism themes/accessible-minimalism`
 
 *Using the https remote URI will make deployment of your website via some CI/CD,
  such as Netlify, easier.*
@@ -82,3 +82,4 @@ The main things you may want to adjust when using this theme are your content
 ### License
 
 [The Unlicense](https://unlicense.org) - do whatever you like with this code.
+Note: This license applies to Sirfredrick's changes as well.
