@@ -3,21 +3,13 @@
 <h1>{{ .Title }}</h1>
 
 {{ range .Pages.ByPublishDate.Reverse }}
-
-    <h3>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    </h3>
-
-    
-    {{ if gt (len .Summary) 0 }}
-
+     
+    <h3> 
       <p>
-        {{ .Summary | safeHTML }}
-
-        <a href="{{ .RelPermalink }}">{{ .Title }} full article</a>
+        <a href="{{ .RelPermalink }}">{{ .Title }} </a>
+        ({{ .PublishDate.Format "2 Jan 2006" }})
       </p>
-  {{ end }}
-
+    </h3>
 
 {{ end }}
 
