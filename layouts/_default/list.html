@@ -4,12 +4,10 @@
 
 {{ range .Pages.ByPublishDate.Reverse }}
      
-    <h3> 
-      <p>
-        <a href="{{ .RelPermalink }}">{{ .Title }} </a>
-        ({{ .PublishDate.Format "2 Jan 2006" }})
-      </p>
-    </h3>
+    <h2>
+      <a href="{{ .RelPermalink }}">{{ .Title }} </a>
+      ({{ .PublishDate.Format "2 Jan 2006" }})
+    </h2>
 
 {{ end }}
 
