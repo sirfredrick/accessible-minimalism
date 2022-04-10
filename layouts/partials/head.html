@@ -1,7 +1,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <link rel="icon" type="image/png" href="https://blog.sirfredrick.com/avatar.png" />
+    <link rel="icon" type="image/svg+xml" href="https://blog.sirfredrick.com/avatar.svg" />
     {{ with .OutputFormats.Get "rss" -}}
         {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
